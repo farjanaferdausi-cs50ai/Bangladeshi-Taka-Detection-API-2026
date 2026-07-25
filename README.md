@@ -18,15 +18,16 @@
 
 **Module 17 Assignment:** Deployment of Bangladeshi Taka Note Detection Model Using REST API & Docker
 **Submitted by:** Farjana Ferdausi
+GitHub Link : https://github.com/farjanaferdausi-cs50ai/Bangladeshi-Taka-Detection-API-2026
+
+Google Documentation: 
+
 
 ---
 
 ## 🌐 Live Demo
 
-**🔗 Live Endpoint & Interactive Docs:** [https://your-app-name.onrender.com/docs](https://your-app-name.onrender.com/docs)
-
-> ⚠️ Hosted on Render's free tier — the server sleeps after 15 minutes of inactivity, so the first request may take 30–60 seconds while it wakes up.
-
+**🔗 Live Endpoint & Interactive Docs:**  https://bangladeshi-taka-detection-api-2026.onrender.com
 ---
 
 ## 📌 Overview
@@ -60,8 +61,8 @@ Bangladeshi-Taka-Detection-API-2026/
 │   ├── main.py          # FastAPI app & routes
 │   └── inference.py     # YOLOv11 model loading & prediction logic
 ├── models/
-│   └── best.pt            # Trained YOLOv11 weights
-├── test_images/            # Sample images for testing
+│   └── best.pt          # Trained YOLOv11 weights
+├── test_images/         # Sample images for testing
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
@@ -145,7 +146,7 @@ Get-ChildItem -Path test_images\* -Include *.jpg,*.jpeg,*.png | ForEach-Object {
 ## 👩‍💻 Author
 
 **Farjana Ferdausi**
-Aspiring AI & ML Engineer — Ostad (Batch-6), Bangladesh.
+Aspiring AI & ML Engineering — Ostad (Batch-6), Bangladesh.
 Also studying AI Engineering & Data Science at CodeBasics, India.
 AI Intern at CodeAlpha, India.
 

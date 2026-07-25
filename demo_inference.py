@@ -6,9 +6,10 @@ Run this file directly to satisfy Task 1's "script demonstrating
 successful inference" requirement.
 """
 
+import os
 from app.inference import predict_image, model
 
-IMAGE_PATH = "test_images/note1.jpg"  # change to any test image you have
+IMAGE_PATH = "test_images/note2.jpg"  # change to any test image you have
 
 with open(IMAGE_PATH, "rb") as f:
     image_bytes = f.read()
@@ -25,6 +26,9 @@ for i, det in enumerate(detections, start=1):
     print(f"  BBox       : {det['bbox']}")
     print()
 
+base_name = os.path.splitext(os.path.basename(IMAGE_PATH))[0]
+output_path = f"test_images/{base_name}_detected.jpg"
+
 results = model.predict(source=IMAGE_PATH, conf=0.4, verbose=False)
-results[0].save(filename="test_images/note1_detected.jpg")
-print("Annotated image saved to test_images/note1_detected.jpg")
+results[0].save(filename=output_path)
+print(f"Annotated image saved to {output_path}")
