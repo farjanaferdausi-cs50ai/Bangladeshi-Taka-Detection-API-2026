@@ -127,7 +127,7 @@ curl.exe -X POST "http://localhost:8000/predict" -F "file=@test_images/note1.jpg
   ]
 }
 ```
-*(replace with your own actual `/predict` output)*
+
 
 ### Batch Testing All Sample Images
 
