@@ -145,7 +145,7 @@ Get-ChildItem -Path test_images\* -Include *.jpg,*.jpeg,*.png | ForEach-Object {
 ## 👩‍💻 Author
 
 **Farjana Ferdausi**
-Aspiring AI & ML Engineer — Ostad (Batch-6), Bangladesh.
+Aspiring AI & ML Engineering — Ostad (Batch-6), Bangladesh.
 Also studying AI Engineering & Data Science at CodeBasics, India.
 AI Intern at CodeAlpha, India.
 
