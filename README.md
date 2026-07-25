@@ -122,12 +122,16 @@ curl.exe -X POST "http://localhost:8000/predict" -F "file=@test_images/note1.jpg
     {
       "class_id": 3,
       "confidence": 0.95,
-      "bbox": { "x1": 12.4, "y1": 58.2, "x2": 480.6, "y2": 452.9 }
+      "bbox": {
+        "x1": 12.4,
+        "y1": 58.2,
+        "x2": 480.6,
+        "y2": 452.9
+      }
     }
   ]
 }
 ```
-
 ### Batch Testing All Sample Images
 
 ```powershell
