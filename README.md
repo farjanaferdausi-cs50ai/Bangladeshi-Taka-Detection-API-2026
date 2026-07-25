@@ -25,7 +25,6 @@
 
 **🔗 Live Endpoint & Interactive Docs:** [https://your-app-name.onrender.com/docs](https://your-app-name.onrender.com/docs)
 
-> ⚠️ Hosted on Render's free tier — the server sleeps after 15 minutes of inactivity, so the first request may take 30–60 seconds while it wakes up.
 
 ---
 
@@ -60,8 +59,8 @@ Bangladeshi-Taka-Detection-API-2026/
 │   ├── main.py          # FastAPI app & routes
 │   └── inference.py     # YOLOv11 model loading & prediction logic
 ├── models/
-│   └── best.pt            # Trained YOLOv11 weights
-├── test_images/            # Sample images for testing
+│   └── best.pt          # Trained YOLOv11 weights
+├── test_images/         # Sample images for testing
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
