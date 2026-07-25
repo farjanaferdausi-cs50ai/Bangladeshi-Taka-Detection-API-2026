@@ -18,14 +18,16 @@
 
 **Module 17 Assignment:** Deployment of Bangladeshi Taka Note Detection Model Using REST API & Docker
 **Submitted by:** Farjana Ferdausi
+GitHub Link : https://github.com/farjanaferdausi-cs50ai/Bangladeshi-Taka-Detection-API-2026
+
+Google Documentation: 
+
 
 ---
 
 ## 🌐 Live Demo
 
-**🔗 Live Endpoint & Interactive Docs:** [https://your-app-name.onrender.com/docs](https://your-app-name.onrender.com/docs)
-
-
+**🔗 Live Endpoint & Interactive Docs:**  https://bangladeshi-taka-detection-api-2026.onrender.com
 ---
 
 ## 📌 Overview
