@@ -1,4 +1,4 @@
-<div align="center">
+<<div align="center">
 
 # 💵 Bangladeshi Taka Note Detection API
 
@@ -11,6 +11,13 @@
 ![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
 
 </div>
+
+---
+
+## 🎓 Assignment Info
+
+**Module 17 Assignment:** Deployment of Bangladeshi Taka Note Detection Model Using REST API & Docker
+**Submitted by:** Farjana Ferdausi
 
 ---
 
@@ -138,7 +145,9 @@ Get-ChildItem -Path test_images\* -Include *.jpg,*.jpeg,*.png | ForEach-Object {
 ## 👩‍💻 Author
 
 **Farjana Ferdausi**
-Transitioning from HR into AI/ML Engineering & Data Science | Building applied computer vision projects
+Aspiring AI & ML Engineer — Ostad (Batch-6), Bangladesh.
+Also studying AI Engineering & Data Science at CodeBasics, India.
+AI Intern at CodeAlpha, India.
 
 ---
 <div align="center">Built with YOLOv11 · FastAPI · Docker</div>
