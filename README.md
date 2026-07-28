@@ -70,7 +70,7 @@ Bangladeshi-Taka-Detection-API-2026/
 
 ## 🚀 Getting Started
 
-### Option A — Run with Docker (recommended)
+### Option A — Run with Docker:
 
 ```bash
 # 1. Clone the repository
