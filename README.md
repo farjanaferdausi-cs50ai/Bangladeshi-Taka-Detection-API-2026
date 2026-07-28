@@ -37,7 +37,7 @@ This project detects and classifies Bangladeshi Taka banknotes from an uploaded 
 ## ✨ Key Features
 
 - 🔍 **Real-time detection** — returns bounding boxes and confidence scores for every note found
-- 💴 **7 denominations supported** — 10, 20, 50, 100, 200, 500, and 1000 Taka
+- 💴 **8 denominations supported** — 2, 10, 20, 50, 100, 200, 500, and 1000 Taka
 - ⚡ **Interactive API docs** — auto-generated Swagger UI at `/docs` and ReDoc at `/redoc`
 - 🐳 **Fully containerized** — one command builds and runs the entire app anywhere
 - ☁️ **Live on the cloud** — publicly testable endpoint, no local setup required
@@ -146,12 +146,12 @@ Get-ChildItem -Path test_images\* -Include *.jpg,*.jpeg,*.png | ForEach-Object {
 
 The YOLOv11n model, evaluated on 333 validation images, achieved 96.5% mAP50 and 95.7% mAP50-95, confirming reliable detection across all Taka denominations. Per-class accuracy is highest for "2 Taka" and "100 Taka" (~99%) and lowest for "10 Taka" (~85%) due to visual similarities. Under normal conditions, confidence scores exceed 90%. However, accuracy drops with blur, extreme angles, poor lighting, or complex multi-note scenes, as the model was trained on single, centered notes. Future augmentation strategies can address these limitations.
 
-## 👩‍💻 Author
+👩‍💻 Author
 
 **Farjana Ferdausi**
 **Aspiring AI & ML Engineering — Ostad (Batch-6),Bangladesh.**
 **Also studying AI Engineering & Data Science at CodeBasics,India.**
 **Artificial Intelligence Intern at CodeAlpha,India.**
-Former HR Professional (14+ years) at Radisson Blu Dhaka Water Garden, Bangladesh 
+**Former HR Professional (14+ years) at Radisson Blu Dhaka Water Garden, Bangladesh** 
 ---
 <div align="center">Built with YOLOv11 · FastAPI · Docker</div>
