@@ -148,10 +148,10 @@ The YOLOv11n model, evaluated on 333 validation images, achieved 96.5% mAP50 and
 
 👩‍💻 Author
 
-**Farjana Ferdausi**
-**Aspiring AI & ML Engineering — Ostad (Batch-6),Bangladesh.**
-**Also studying AI Engineering & Data Science at CodeBasics,India.**
-**Artificial Intelligence Intern at CodeAlpha,India.**
-**Former HR Professional (14+ years) at Radisson Blu Dhaka Water Garden, Bangladesh** 
+Farjana Ferdausi
+Aspiring AI & ML Engineering — Ostad (Batch-6),Bangladesh.
+Also studying AI Engineering & Data Science at CodeBasics,India.
+Artificial Intelligence Intern at CodeAlpha,India.
+Former HR Professional (14+ years) at Radisson Blu Dhaka Water Garden,Bangladesh
 ---
 <div align="center">Built with YOLOv11 · FastAPI · Docker</div>
