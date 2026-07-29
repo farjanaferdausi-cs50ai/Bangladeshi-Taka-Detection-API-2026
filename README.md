@@ -153,7 +153,7 @@ Get-ChildItem -Path test_images\* -Include *.jpg,*.jpeg,*.png | ForEach-Object {
 
 ## 📊 Accuracy Notes
 
-[Write 4–5 lines here based on your own test results: which notes were detected correctly, the typical confidence range, and which conditions — blur, low light, tilted angle — reduced accuracy.]
+Evaluated on 333 validation images, the model achieved 96.5% mAP50 and 95.7% mAP50-95, indicating strong and consistent detection across all seven denominations. Per-class accuracy is highest for 100 Taka and 20 Taka (~99%) and lowest for 10 Taka (~85%), likely due to visual similarity with other denominations. Confidence scores typically exceed 90% under normal conditions, but drop with blur, extreme angles, poor lighting, or multi-note scenes, since training data consisted of single, centered notes.
 
 ## 👩‍💻 Author
 
@@ -161,6 +161,7 @@ Get-ChildItem -Path test_images\* -Include *.jpg,*.jpeg,*.png | ForEach-Object {
 **Aspiring AI & ML Engineering — Ostad (Batch-6),Bangladesh.**
 **Also studying AI Engineering & Data Science at CodeBasics,India.**
 **Artificial Intelligence Intern at CodeAlpha,India.**
+**Former HR Professional (14+ years) at Radisson Blu Dhaka Water Garden,Bangladesh.**
 
 ---
 <div align="center">Built with YOLOv11 · FastAPI · Docker</div>
