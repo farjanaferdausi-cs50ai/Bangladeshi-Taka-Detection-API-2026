@@ -27,7 +27,7 @@ Google Documentation:https://docs.google.com/document/d/1I_sdmaHuVITVG0gBQYK1J_2
 
 ## 🌐 Live Demo
 
-**🔗 Live Endpoint & Interactive Docs:**  https://bangladeshi-taka-detection-api-2026.onrender.com
+**🔗 Live Endpoint & Interactive Docs:**  https://bangladeshi-taka-detection-api-2026-1.onrender.com
 ---
 
 ## 📌 Overview
