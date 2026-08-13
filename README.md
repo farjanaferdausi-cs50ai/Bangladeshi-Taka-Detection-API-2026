@@ -1,6 +1,6 @@
 <<div align="center">
 
-# 💵 **Bangladeshi Taka Note Detection API** 💵
+# 💵 **Bangladeshi Taka Note Detection API** 
 
 
 ### AI-powered REST API that detects and classifies Bangladeshi Taka banknotes in real time
@@ -13,7 +13,7 @@
 
 </div>
 
-                                                        <img width="200" height="200" alt="Logo 1" src="https://github.com/user-attachments/assets/7ced81e1-f84b-4114-b97a-4b4b70007dd4" />
+                                <img width="200" height="200" alt="Logo 1" src="https://github.com/user-attachments/assets/7ced81e1-f84b-4114-b97a-4b4b70007dd4" />
 
 ---
 
