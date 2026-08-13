@@ -1,7 +1,6 @@
 <<div align="center">
 
-# 💵 <img width="200" height="200" alt="Logo 1" src="https://github.com/user-attachments/assets/355823ef-1dcc-43d1-b165-aa23b039df10" />
- **Bangladeshi Taka Note Detection API** 
+#**Bangladeshi Taka Note Detection API** 💵
 
 <img width="200" height="200" alt="Logo 1" src="https://github.com/user-attachments/assets/7ced81e1-f84b-4114-b97a-4b4b70007dd4" />
 
