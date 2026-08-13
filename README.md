@@ -10,9 +10,7 @@
 ![YOLOv11](https://img.shields.io/badge/YOLOv11-Ultralytics-8A2BE2?style=for-the-badge)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
-
 </div>
-
 <<div align="center">
  
 <img width="200" height="200" alt="Logo 1" src="https://github.com/user-attachments/assets/7ced81e1-f84b-4114-b97a-4b4b70007dd4" />
