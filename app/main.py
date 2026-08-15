@@ -11,9 +11,9 @@ Endpoints:
 import logging
 
 from fastapi import FastAPI, File, HTTPException, UploadFile
-from fastapi.responses import JSONResponse
 
 from app.inference import predict_image
+from app.schemas import PredictResponse
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -33,7 +33,7 @@ def health_check():
     return {"status": "ok"}
 
 
-@app.post("/predict")
+@app.post("/predict", response_model=PredictResponse)
 async def predict(file: UploadFile = File(...)):
     """
     Run detection on a single uploaded image and return the results as JSON.
@@ -57,11 +57,8 @@ async def predict(file: UploadFile = File(...)):
         logger.exception("Inference failed")
         raise HTTPException(status_code=500, detail=f"Inference failed: {exc}")
 
-    return JSONResponse(
-        status_code=200,
-        content={
-            "filename": file.filename,
-            "num_detections": len(detections),
-            "detections": detections,
-        },
+    return PredictResponse(
+        filename=file.filename,
+        num_detections=len(detections),
+        detections=detections,
     )
