@@ -1,21 +1,21 @@
-<<div align="center">
+<div align="center">
 
-# 💵 **Bangladeshi Taka Note Detection API** 
+# 💵 **Bangladeshi Taka Note Detection API**
 
 
 ### AI-powered REST API that detects and classifies Bangladeshi Taka banknotes in real time
 
-![Python](https://img.shields.io/badge/Python-3.11-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![YOLOv11](https://img.shields.io/badge/YOLOv11-Ultralytics-8A2BE2?style=for-the-badge)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=white)
 </div>
-<<div align="center">
- 
+<div align="center">
+
 <img width="200" height="200" alt="Logo 1" src="https://github.com/user-attachments/assets/7ced81e1-f84b-4114-b97a-4b4b70007dd4" />
 
-</div> 
+</div>
 
 ---
 
@@ -25,8 +25,7 @@
 **Submitted by:** **Farjana Ferdausi**
 GitHub Link : https://github.com/farjanaferdausi-cs50ai/Bangladeshi-Taka-Detection-API-2026
 
-Google Documentation:https://docs.google.com/document/d/1I_sdmaHuVITVG0gBQYK1J_22Mo0rCG2jPel-IUJUVWw/edit?usp=sharing
-
+Google Documentation: https://docs.google.com/document/d/1I_sdmaHuVITVG0gBQYK1J_22Mo0rCG2jPel-IUJUVWw/edit?usp=sharing
 
 ---
 
@@ -34,11 +33,11 @@ Google Documentation:https://docs.google.com/document/d/1I_sdmaHuVITVG0gBQYK1J_2
 
 **🔗 Live Endpoint & Interactive Docs:**
 
-https://bangladeshi-taka-detection-api-2026-1.onrender.com/health                                              
+https://bangladeshi-taka-detection-api-2026-1.onrender.com/health
 
-https://bangladeshi-taka-detection-api-2026-1.onrender.com/docs                                                
+https://bangladeshi-taka-detection-api-2026-1.onrender.com/docs
 
-https://bangladeshi-taka-detection-api-2026-1.onrender.com/redoc                                               
+https://bangladeshi-taka-detection-api-2026-1.onrender.com/redoc
 
 https://bangladeshi-taka-detection-api-2026-1.onrender.com
 
@@ -51,9 +50,9 @@ This project detects and classifies Bangladeshi Taka banknotes from an uploaded 
 ## ✨ Key Features
 
 - 🔍 **Real-time detection** — returns bounding boxes and confidence scores for every note found
-- 💴 **7 denominations supported** — 10, 20, 50, 100, 200, 500, and 1000 Taka
+- 💴 **9 denominations supported** — 1, 2, 5, 10, 20, 50, 100, 500, and 1000 Taka
 - ⚡ **Interactive API docs** — auto-generated Swagger UI at `/docs` and ReDoc at `/redoc`
-- 🐳 **Fully containerized** — one command builds and runs the entire app anywhere
+- 🐳 **Fully containerized** — one command builds and runs the entire app anywhere (or use Docker Compose)
 - ☁️ **Live on the cloud** — publicly testable endpoint, no local setup required
 
 ## 🛠️ Tech Stack
@@ -62,8 +61,9 @@ This project detects and classifies Bangladeshi Taka banknotes from an uploaded 
 |---|---|---|
 | API Framework | FastAPI + Uvicorn | Request handling & routing |
 | Object Detection | YOLOv11 (Ultralytics) | Banknote detection & classification |
-| Image Processing | OpenCV / Pillow | Image decoding & annotation |
-| Containerization | Docker | Reproducible, portable deployment |
+| Image Processing | Pillow | Image decoding & annotation |
+| Validation | Pydantic (`schemas.py`) | Typed request/response models |
+| Containerization | Docker / Docker Compose | Reproducible, portable deployment |
 | Cloud Hosting | Render | Free-tier web service hosting |
 
 ## 📁 Project Structure
@@ -72,19 +72,22 @@ This project detects and classifies Bangladeshi Taka banknotes from an uploaded 
 Bangladeshi-Taka-Detection-API-2026/
 ├── app/
 │   ├── __init__.py
-│   ├── main.py          # FastAPI app & routes
-│   └── inference.py     # YOLOv11 model loading & prediction logic
+│   ├── main.py           # FastAPI app & routes
+│   ├── inference.py      # YOLOv11 model loading & prediction logic
+│   └── schemas.py        # Pydantic request/response models
 ├── models/
-│   └── best.pt          # Trained YOLOv11 weights
-├── test_images/         # Sample images for testing
+│   └── best.pt            # Trained YOLOv11 weights (Phase-1)
+├── test_images/            # Sample images for testing
+├── demo_inference.py       # Standalone single-image inference demo
 ├── Dockerfile
+├── docker-compose.yml      # Optional one-command build + run
 ├── requirements.txt
 └── README.md
 ```
 
 ## 🚀 Getting Started
 
-### Option A — Run with Docker (recommended)
+### Option A — Run with Docker
 
 ```bash
 # 1. Clone the repository
@@ -92,15 +95,22 @@ git clone https://github.com/farjanaferdausi-cs50ai/Bangladeshi-Taka-Detection-A
 cd Bangladeshi-Taka-Detection-API-2026
 
 # 2. Build the image
-docker build -t bangladeshi-taka-detection-api .
+docker build -t taka-api .
 
 # 3. Run the container
-docker run -d -p 8000:8000 --name taka-api bangladeshi-taka-detection-api
+docker run -d -p 8000:8000 --name taka-api taka-api
+```
+
+### Option B — Run with Docker Compose
+
+```bash
+docker compose up --build   # build the image and start the container
+docker compose down         # stop and remove it
 ```
 
 Visit **http://localhost:8000/docs** to try it out.
 
-### Option B — Run locally with Python
+### Option C — Run locally with Python
 
 ```bash
 pip install -r requirements.txt
@@ -110,9 +120,9 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 ## 📡 API Reference
 
 ### Health Check
-`GET /`
+`GET /health`
 ```json
-{ "message": "API is working!" }
+{ "status": "ok" }
 ```
 
 ### Predict
@@ -124,23 +134,23 @@ uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
 
 **Example request:**
 ```bash
-curl.exe -X POST "http://localhost:8000/predict" -F "file=@test_images/note1.jpg;type=image/jpeg"
+curl.exe -X POST "http://localhost:8000/predict" -F "file=@test_images/note2.jpg;type=image/jpeg"
 ```
 
 **Example response:**
 ```json
 {
-  "filename": "note1.jpg",
-  "total_detections": 1,
+  "filename": "note2.jpg",
+  "num_detections": 1,
   "detections": [
     {
-      "class_id": 3,
-      "confidence": 0.95,
+      "class_name": "500 Taka",
+      "confidence": 0.5037,
       "bbox": {
-        "x1": 12.4,
-        "y1": 58.2,
-        "x2": 480.6,
-        "y2": 452.9
+        "x1": 20.34,
+        "y1": 66.78,
+        "x2": 1497.89,
+        "y2": 795.69
       }
     }
   ]
@@ -158,15 +168,15 @@ Get-ChildItem -Path test_images\* -Include *.jpg,*.jpeg,*.png | ForEach-Object {
 
 ## 📊 Accuracy Notes
 
-Evaluated on 333 validation images, the model achieved 96.5% mAP50 and 95.7% mAP50-95, indicating strong and consistent detection across all seven denominations. Per-class accuracy is highest for 100 Taka and 20 Taka (~99%) and lowest for 10 Taka (~85%), likely due to visual similarity with other denominations. Confidence scores typically exceed 90% under normal conditions, but drop with blur, extreme angles, poor lighting, or multi-note scenes, since training data consisted of single, centered notes.
+Evaluated on 333 held-out validation images, the model reached **87.2% precision, 92.6% recall, 96.5% mAP50, and 95.7% mAP50-95** — strong, consistent performance across all nine trained denominations. Per-class mAP50-95 is highest for 2 Taka (99.2%) and lowest for 10 Taka (84.6%), most likely because 10 Taka's colour palette and layout are visually closest to its neighbouring small-denomination notes. Confidence scores typically exceed 0.90 for a clean, well-lit, single-note image, and fall noticeably for blurred photos, extreme angles, poor lighting, or multi-note frames, since every training image was a single, centered banknote. Note: 200 Taka is **not** one of the nine trained classes, so it is expected to be misclassified if tested.
 
 ## 👩‍💻 Author
 
 **Farjana Ferdausi**
-**Aspiring AI & ML Engineering — Ostad (Batch-6),Bangladesh.**
-**Also studying AI Engineering & Data Science at CodeBasics,India.**
-**Artificial Intelligence Intern at CodeAlpha,India.**
-**Former HR Professional (14+ years) at Radisson Blu Dhaka Water Garden,Bangladesh.**
+**Aspiring AI & ML Engineering — Ostad (Batch-6), Bangladesh.**
+**Also studying AI Engineering & Data Science at CodeBasics, India.**
+**Artificial Intelligence Intern at CodeAlpha, India.**
+**Former HR Professional (14+ years) at Radisson Blu Dhaka Water Garden, Bangladesh.**
 
 ---
 <div align="center">Built with YOLOv11 · FastAPI · Docker</div>
