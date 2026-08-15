@@ -171,10 +171,7 @@ Evaluated on 333 held-out validation images, the model reached **87.2% precision
 
 **Farjana Ferdausi**
 
-**Aspiring AI & ML Engineering — Ostad (Batch-6), Bangladesh.**
-**Also studying AI Engineering & Data Science at CodeBasics, India.**
-**Artificial Intelligence Intern at CodeAlpha, India.**
-**Former HR Professional (14+ years) at Radisson Blu Dhaka Water Garden, Bangladesh.**
+**AI Engineering Fellow — Google Cloud Gen AI Academy (Cohort 3) | Agentic AI · RAG · Gemini · ADK · BigQuery MCP · Cloud Run | AI Intern @ CodeAlpha | Former HR Professional (14+ yrs)**
 
 ---
 <div align="center">Built with YOLOv11 · FastAPI · Docker</div>
