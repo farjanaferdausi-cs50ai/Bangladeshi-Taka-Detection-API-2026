@@ -77,11 +77,11 @@ Bangladeshi-Taka-Detection-API-2026/
 │   ├── inference.py      # YOLOv11 model loading & prediction logic
 │   └── schemas.py        # Pydantic request/response models
 ├── models/
-│   └── best.pt            # Trained YOLOv11 weights (Phase-1)
-├── test_images/            # Sample images for testing
-├── demo_inference.py       # Standalone single-image inference demo
+│   └── best.pt           # Trained YOLOv11 weights (Phase-1)
+├── test_images/          # Sample images for testing
+├── demo_inference.py     # Standalone single-image inference demo
 ├── Dockerfile
-├── docker-compose.yml      # Optional one-command build + run
+├── docker-compose.yml    # Optional one-command build + run
 ├── requirements.txt
 └── README.md
 ```
