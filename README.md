@@ -173,6 +173,7 @@ Evaluated on 333 held-out validation images, the model reached **87.2% precision
 ## 👩‍💻 Author
 
 **Farjana Ferdausi**
+
 **Aspiring AI & ML Engineering — Ostad (Batch-6), Bangladesh.**
 **Also studying AI Engineering & Data Science at CodeBasics, India.**
 **Artificial Intelligence Intern at CodeAlpha, India.**
