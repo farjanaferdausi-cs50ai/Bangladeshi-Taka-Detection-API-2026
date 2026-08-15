@@ -38,8 +38,6 @@ Health check: https://bangladeshi-taka-detection-api-2026-1.onrender.com/health
 
 Interactive docs: https://bangladeshi-taka-detection-api-2026-1.onrender.com/docs
 
-Base URL: https://bangladeshi-taka-detection-api-2026-1.onrender.com
-
 ---
 
 ## 📌 Overview
