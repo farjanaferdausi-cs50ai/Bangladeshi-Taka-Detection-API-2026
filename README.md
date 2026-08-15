@@ -36,9 +36,9 @@ Google Documentation: https://docs.google.com/document/d/1V2CFB6Zp8QtfcS6YgDdZvK
 
 Live API (Render): https://bangladeshi-taka-detection-api-2026-1.onrender.com/docs
 
-Interactive docs: https://bangladeshi-taka-detection-api-2026-1.onrender.com/docs
-
 Health check: https://bangladeshi-taka-detection-api-2026-1.onrender.com/health
+
+Interactive docs: https://bangladeshi-taka-detection-api-2026-1.onrender.com/docs
 
 ---
 
