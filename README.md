@@ -173,5 +173,9 @@ Evaluated on 333 held-out validation images, the model reached **87.2% precision
 
 **AI Engineering Fellow — Google Cloud Gen AI Academy (Cohort 3) | Agentic AI · RAG · Gemini · ADK · BigQuery MCP · Cloud Run | AI Intern @ CodeAlpha | Former HR Professional (14+ yrs)**
 
+GitHub Repo : https://github.com/farjanaferdausi-cs50ai
+LinkedIn Link :  https://www.linkedin.com/in/farjana-ferdausi/
+Medium Link : https://medium.com/@farjana.rafi1983
+
 ---
 <div align="center">Built with YOLOv11 · FastAPI · Docker</div>
