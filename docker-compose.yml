@@ -1,0 +1,18 @@
+# docker-compose.yml
+#
+# Optional alternative to running `docker build` + `docker run` by hand
+# (Section 4.3 of the assignment doc). Added for the Module 17 resubmission,
+# following the Docker Compose pattern from the Module 19 Docker class.
+#
+# Usage:
+#   docker compose up --build   # build the image and start the container
+#   docker compose down         # stop and remove it
+
+version: '3.8'
+services:
+  app:
+    build: .
+    container_name: taka-api
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
